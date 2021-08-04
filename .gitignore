@@ -1,0 +1,3 @@
+*.log
+node_modules/
+#this files will not available download using npm or otherwise

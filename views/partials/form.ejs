@@ -1,0 +1,41 @@
+<div class="container">
+    <form method="GET" onsubmit="formSubmit(event)" >
+
+      <div class="row">
+        <div class="col-25">
+          <label for="country">METHOD</label>
+        </div>
+        <div class="col-75">
+          <select id="topic" name="country"   onchange="selectedMethod(event)">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="PATCH">PATCH</option>
+            <option value="DELETE">DELETE</option>
+           
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Give A Title </label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="title" name="title" placeholder="title .....">
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Content</label>
+        </div>
+        <div class="col-75">
+          <textarea id="content" name="content" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit / Post">
+      </div>
+    </form>
+  </div>
